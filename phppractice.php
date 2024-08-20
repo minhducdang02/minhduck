@@ -18,3 +18,20 @@ function isEven($number) {
   }
 echo '<br>';
 
+//Cau 2
+echo 'Question 2:';
+function sumOfNumbers($n) {
+    $sum = 0;
+    for ($i = 1; $i <= $n; $i++) {
+      $sum += $i;
+    }
+    return $sum;
+  }
+  
+  $n = 50;
+  
+  $sum = sumOfNumbers($n);
+  
+  echo "The sum of numbers from 1 to $n is $sum.";
+
+echo '<br>';
