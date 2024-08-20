@@ -35,3 +35,4 @@ function sumOfNumbers($n) {
   echo "The sum of numbers from 1 to $n is $sum.";
 
 echo '<br>';
+
