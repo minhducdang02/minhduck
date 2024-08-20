@@ -36,3 +36,36 @@ function sumOfNumbers($n) {
 
 echo '<br>';
 
+//Cau 3
+echo 'Question 3:';
+function multiplicationTable(){
+    for ($x=1; $x<=10; $x++){
+        for ($y=1; $y <= 10; $y++){
+            $total= $x * $y;
+            echo "$x*$y= $total <br>";
+        }
+        echo "<br>";
+    }
+}
+echo  multiplicationTable() ;
+echo '<br>';
+
+//Cau 4
+echo 'Question 4:';
+function containsWord($string, $word) {
+    if (strpos($string, $word) !== false) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+  $string = "Tai lieu hoc tap";
+  $word = "lieu";
+  
+  if (containsWord($string, $word)) {
+    echo "The string contains the word $word.";
+  } else {
+    echo "The string does not contain the word $word.";
+  }
+echo '<br>';
