@@ -69,3 +69,31 @@ function containsWord($string, $word) {
     echo "The string does not contain the word $word.";
   }
 echo '<br>';
+
+
+//Cau 5
+echo 'Question 5:';
+function findMaxAndMin($array) {
+    $max = $array[0];
+    $min = $array[0];
+  
+    foreach ($array as $value) {
+      if ($value > $max) {
+        $max = $value;
+      }
+  
+      if ($value < $min) {
+        $min = $value;
+      }
+    }
+  
+    return array($max, $min);
+  }
+  
+  $array = array(1, 5, 3, 2, 4);
+  
+  $maxAndMin = findMaxAndMin($array);
+  
+  echo "The maximum value is $maxAndMin[0].";
+  echo "The minimum value is $maxAndMin[1].";
+echo '<br>';
