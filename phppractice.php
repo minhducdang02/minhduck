@@ -97,3 +97,27 @@ function findMaxAndMin($array) {
   echo "The maximum value is $maxAndMin[0].";
   echo "The minimum value is $maxAndMin[1].";
 echo '<br>';
+
+
+
+//Cau 6
+echo 'Question 6:';
+function sortArray($array) {
+    $sortedArray = array();
+  
+    foreach ($array as $value) {
+      $sortedArray[] = $value;
+    }
+  
+    asort($sortedArray);
+  
+    return $sortedArray;
+  }
+  
+  $array = array(1, 5, 3, 2, 4);
+  
+  $sortedArray = sortArray($array);
+  
+  echo "The sorted array is: ";
+  print_r($sortedArray);
+echo '<br>';
